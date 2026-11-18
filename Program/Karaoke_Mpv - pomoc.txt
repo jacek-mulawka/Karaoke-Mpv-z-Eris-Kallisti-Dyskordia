@@ -1,0 +1,154 @@
+﻿
+
+
+
+---
+
+
+
+
+
+Program do działania potrzebuje pliku libmpv-2.dll dostępnego na stronie:
+
+To run, the program requires an 'libmpv-2.dll' file, which is available on the website:
+
+
+https://sourceforge.net/projects/mpv-player-windows/files/libmpv/
+
+
+
+---
+
+
+
+
+
+O napisach:
+
+Domyślnie akceptowane rozszerzenia plików (tekstowych) z napisami: esama_karaoke, srt, txt.
+
+Parametry napisów należy zdefiniować w 4 pierwszych linijkach pliku (bez pierwszych pustych linii).
+  - Przesunięcie napisów należy zdefiniować w 3 linijce pliku, wartość jest w milisekundach; mogą być też wartości ujemne (przesunięcie napisów=300|-1000). 
+
+Jeżeli nie zdefiniowano parametrów napisów zaleca się zostawić pierwszą linijkę pustą (dla niektórych kodowań, np. UTF-8, błędnie dekoduje pierwszą linijkę).
+
+Parametrów napisów nie wyświetla w zakładce test (jeżeli wyświetla to znaczy, że nie zinterpretował parametrów prawidłowo i są traktowane jako tekst piosenki).
+
+Przykładowa struktura plików z napisami:
+I:
+
+0
+00:00:02,000 --> 00:00:12,000
+Tekst piosenki 1
+
+0
+00:00:15,500 --> 00:00:27,000
+Tekst piosenki 2
+Tekst piosenki 3
+
+0
+00:00:30,200 --> 00:00:42,123
+Tekst piosenki 4
+
+Tekst piosenki 5
+II (z zadanym przesunięciem wszystkich napisów):
+0
+00:00:00,001 --> 00:00:00,002
+przesunięcie napisów=300
+
+0
+00:00:02,000 --> 00:00:12,000
+Tekst piosenki 1
+
+0
+00:00:15,500 --> 00:00:27,000
+Tekst piosenki 2
+Tekst piosenki 3
+
+0
+00:00:30,200 --> 00:00:42,123
+Tekst piosenki 4
+
+Tekst piosenki 5
+
+
+
+
+---
+
+
+
+
+English
+
+
+Use it at your own risk. Without warranty of any kind. If you do not agree, do not use it at all.
+
+
+About subtitles:
+
+Default accepted extensions of (text) files with subtitles: esama_karaoke, srt, txt.
+
+The subtitle parameters should be defined in the first 4 lines of the file (without the first blank lines).
+  - The subtitle offset should be defined in the 3rd line of the file, the value is in milliseconds; there can also be negative values [subtitle offset](przesunięcie napisów=300|-1000).
+
+If no subtitle parameters are defined, it is recommended to leave the first line blank (for some encodings, such as UTF-8, it incorrectly decodes the first line).
+
+Subtitle parameters do not display in the test tab (if it displays it means that it has not interpreted the parameters correctly and they are treated as a song text).
+
+Example of subtitle file structure:
+I:
+
+0
+00:00:02,000 --> 00:00:12,000
+Words of the song 1
+
+0
+00:00:15,500 --> 00:00:27,000
+Words of the song 2
+Words of the song 3
+
+0
+00:00:30,200 --> 00:00:42,123
+Words of the song 4
+
+Words of the song 5
+II (with the specified offset of all subtitles):
+0
+00:00:00,001 --> 00:00:00,002
+przesunięcie napisów=300
+ukrywanie napisów=góra
+
+0
+00:00:02,000 --> 00:00:12,000
+Words of the song 1
+
+0
+00:00:15,500 --> 00:00:27,000
+Words of the song 2
+Words of the song 3
+
+0
+00:00:30,200 --> 00:00:42,123
+Words of the song 4
+
+Words of the song 5
+
+
+
+
+---
+
+
+
+
+Parametry pliku ini - Ini file parameters
+
+czas__skok__duży_sekundy - przeskok czasu utworu duży - track time skip large [seconds]
+czas__skok__mały_sekundy - przeskok czasu utworu mały - track time skip small [seconds]
+czas__skok__minimalny_sekundy - przeskok czasu utworu średni - track time skip medium [seconds]
+czas__skok__średni_sekundy - przeskok czasu utworu minimalny - track time skip minimal [seconds]
+mysz__kursor__ruch__ukrywanie__czas_sekundy - po ilu sekundach ukrywać kursor myszy (przy pełnym ekranie) - after how many seconds to hide the mouse cursor (in full-screen mode) [seconds]
+napisy__korekta_intensywność - z jaką intensywnością dostosowywać odchylenie pozycji napisów względem czasu utworu - at what intensity to adjust the offset of subtitle positions relative to the track's timeline
+napisy__odświeżanie_milisekundy - jak często przeliczać pozycję napisów względem czasu utworu - how often to recalculate the position of subtitles relative to the track's timeline [milliseconds]
+napisy__synchronizacja_ponad_milisekundy - po jak dużym odchyleniu pozycji napisów względem czasu utworu wymusić synchronizację do czasu utworu - at what degree of deviation between subtitle positions and the track's timeline should synchronization to the track's timeline be enforced [milliseconds]

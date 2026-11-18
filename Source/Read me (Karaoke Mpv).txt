@@ -1,0 +1,10 @@
+Karaoke Mpv z Eris Kallisti Dyskordia
+wersja 2026.11.09.
+
+MIT License
+
+Copyright (c) 2026 Jacek Mulawka
+
+j.mulawka@interia.pl
+
+https://github.com/jacek-mulawka
